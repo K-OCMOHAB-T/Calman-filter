@@ -12,21 +12,17 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='http://phys.msu.ru',
-    license='MIT',
+    license='SCR',
     packages=find_packages(),
     # If all your code are in a module, use py_modules instead of packages:
     # py_modules=['ser'],
-    scripts=['bin/serpens'],
-    entry_points={
-        'console_scripts': ['issnake = ser.snake:main'],
-        'gui_scripts': ['plotsnake = ser.snake:plot'],
-    },
+    # scripts=['bin/serpens'],
     test_suite='test',
     install_requires=['numpy>=1.13', 'matplotlib>=2.0,<3.0'],
     classifiers=[
         'Intended Audience :: Science/Research',
         'Intended Audience :: Education',
-        'License :: OSI Approved :: MIT License',
+        'License :: OSI Approved :: SCR License',
         'Topic :: Education',
         'Programming Language :: Python :: 3',
         # See full list on https://pypi.org/classifiers/
