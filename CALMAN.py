@@ -22,6 +22,11 @@ with open(DATA_file) as file_observation:
         Result_obs.append(float(line.split()[1]))
         Observations_y.append(float(line.split()[1]))
 
+plt.plot(Observations_x, Observations_y, '.', color='Green', markersize=2, label='Observation')
+plt.title('RANGE TO LAGEOS')
+plt.legend()
+plt.show()
+
 coeff_polynom = np.polyfit(Observations_x, Observations_y, POLYNOM_degree)
 theoretical_function = np.poly1d(coeff_polynom)
 Model_y = theory(Observations_x, theoretical_function)
