@@ -14,7 +14,6 @@ setup(
     url='http://www.vniiftri.ru/ru/',
     license='SCR',
     packages=find_packages(),
-    package_data = {'my_modul':['data/obs.txt']},
     scripts=['my_modul/calman.py'],
     entry_points={
         'console_scripts': ['calman = my_modul.calman:main'],
