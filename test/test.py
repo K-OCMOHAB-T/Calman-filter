@@ -1,6 +1,7 @@
 import unittest
 import numpy as np
 from my_modul import sigma_observation, calman_filter
+import os
 
 
 class MyTestCase(unittest.TestCase):
@@ -11,7 +12,7 @@ class MyTestCase(unittest.TestCase):
         mod_x = []
         filtered_obs_y = []
 
-        with open("test_file") as file_observation:
+        with open(os.path.dirname(os.path.abspath(__file__))+os.path.sep+"test_file") as file_observation:
             for line in file_observation:
                 observations_x.append(float(line.split()[0]))
                 observations_y.append(float(line.split()[1]))
