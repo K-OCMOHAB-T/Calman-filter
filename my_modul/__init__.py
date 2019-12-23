@@ -1,7 +1,6 @@
 from math import sqrt, fabs
 import os
 
-data_obs = os.path.dirname(os.path.abspath(__file__))+os.path.sep+'data'+os.path.sep+'obs.txt'
 
 def sigma_observation(y_obs, model):
     """Вычисление дисперсии
