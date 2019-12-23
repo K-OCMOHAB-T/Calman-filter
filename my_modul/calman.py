@@ -1,3 +1,4 @@
+import sys
 import numpy as np
 import matplotlib.pyplot as plt
 from my_modul import *
@@ -14,7 +15,7 @@ def main():
 
     Result_obs = []
 
-    with open(data_obs) as file_observation:
+    with open(sys.argv[1]) as file_observation:
         for line in file_observation:
             Observations_x.append(float(line.split()[0]))
             Result_obs.append(float(line.split()[1]))
